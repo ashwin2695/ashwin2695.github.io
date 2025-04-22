@@ -30,6 +30,7 @@ button {
 button:hover {
   background-color: #4f46e5;
   transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
 }
 
 main {
@@ -39,6 +40,7 @@ main {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  animation: fadeInDown 1s both;
 }
 
 h2 {
@@ -53,7 +55,7 @@ h2 {
   border-radius: 1.5rem;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   max-width: 900px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
 }
 
 .card:hover {
@@ -87,4 +89,74 @@ ul {
 
 li {
   margin-bottom: 0.5rem;
+}
+
+/* AOS animations enhancement */
+[data-aos] {
+  pointer-events: none;
+}
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
+/* Skill bar animations */
+.skill-progress-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-progress-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  transform: translateX(-100%);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.experience-item:hover, .education-item:hover, .certification-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover .skill-progress-bar {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.header:hover h1 {
+  animation: pulse 1s infinite;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }

@@ -83,23 +83,21 @@
       "details": "Developed custom Salesforce solutions, implemented automation workflows, and integrated third-party applications using APIs."
     }
   ],
-  
+  s
   "education": [
     {
-      "degree": "Masters in Applied Data Science",
+      "degree": "Masters in Data Science",
       "institution": "The University of Bath",
-      "duration": "2019 - 2020"
+      "duration": "2021 - 2022"
     },
     {
       "degree": "Bachelor of Engineering in Computer Science",
-      "institution": "University of Mumbai",
-      "duration": "2015 - 2019"
+      "institution": "University of Pune",
+      "duration": "2013 - 2017"
     }
   ],
   
   "extras": [
-    "Volunteer Salesforce Administrator for a local non-profit organization",
-    "Regular contributor to Salesforce Stack Exchange community",
     "Presenter at local Salesforce user group meetings",
     "Mentor for new Salesforce administrators"
   ]

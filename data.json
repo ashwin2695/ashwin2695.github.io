@@ -1,59 +1,106 @@
 {
   "name": "Ashwin Dilip Adhav",
-  "contact": "Stockport, Manchester | 07825347134 | 26adhav.ashwin@gmail.com",
-  "summary": "Experienced Salesforce Developer with a proven track record in delivering end-to-end solutions across Salesforce Sales, CPQ, Service, FSL, Vlocity, Communications, Revenue, and Experience Site clouds. Skilled in integrating Salesforce with external systems, using tools like Gearset, VSCode, SourceTree, GitLab, GitHub, Workbench, and Change Sets for smooth deployments and operations. Proficient in developing Apex classes, triggers, Visualforce pages, controllers and extensions, Aura components, and Salesforce Flows.",
+  "contact": "Singapore | +65 XXXXXXXX | your.email@example.com",
+  "titles": ["Salesforce Lightning Developer", "Salesforce Administrator", "Data Scientist"],
+  "summary": "Certified Salesforce Administrator with expertise in Lightning Experience, process automation, and security management. Triple Star Ranger with proven experience implementing and optimizing Salesforce solutions across multiple clouds.",
+  
+  "coreCompetencies": [
+    "Problem Solving",
+    "Attention to Detail",
+    "Communication",
+    "Process Automation",
+    "Data Management",
+    "Security Management",
+    "User Management",
+    "Business Analysis",
+    "Feature Analysis And Development",
+    "Change Management"
+  ],
+  
+  "skills": [
+  { "name": "Flows (Record-Triggered, Scheduled)", "level": 85, "category": "Admin" },
+  { "name": "Reports and Dashboards", "level": 90, "category": "Admin" },
+  { "name": "Security and Access Management", "level": 85, "category": "Admin" },
+  { "name": "Profiles and Permission Sets", "level": 90, "category": "Admin" },
+  { "name": "Role Hierarchy and Sharing Rules", "level": 85, "category": "Admin" },
+  { "name": "Data Loader / Data Import Wizard", "level": 80, "category": "Admin" },
+  { "name": "Lightning App Builder", "level": 80, "category": "Admin" },
+  
+  { "name": "Apex Programming", "level": 70, "category": "Technical" },
+  { "name": "SOQL / SOSL", "level": 75, "category": "Technical" },
+  { "name": "REST API Integration", "level": 70, "category": "Technical" },
+  { "name": "Salesforce Object Model (Standard and Custom Objects)", "level": 90, "category": "Technical" },
+  { "name": "Validation Rules and Workflow Rules", "level": 85, "category": "Technical" },
+  { "name": "Lightning Web Components (LWC)", "level": 70, "category": "Technical" },
+  { "name": "Aura Components", "level": 60, "category": "Technical" },
+  { "name": "OmniStudio (FlexCards, OmniScripts)", "level": 65, "category": "Technical" },
+  
+  { "name": "Salesforce DevOps (Gearset)", "level": 75, "category": "DevOps" },
+  { "name": "Copado", "level": 70, "category": "DevOps" },
+  { "name": "Change Sets", "level": 80, "category": "DevOps" },
+  { "name": "Version Control (Git)", "level": 65, "category": "DevOps" },
+  { "name": "SFDX CLI", "level": 65, "category": "DevOps" },
+  { "name": "VS Code (Salesforce Extensions)", "level": 75, "category": "DevOps" },
+  
+  { "name": "Sales Cloud", "level": 90, "category": "Cloud Specializations" },
+  { "name": "Service Cloud", "level": 85, "category": "Cloud Specializations" },
+  { "name": "Experience Cloud (Communities)", "level": 70, "category": "Cloud Specializations" },
+  { "name": "CPQ (Configure, Price, Quote)", "level": 60, "category": "Cloud Specializations" },
+  
+  { "name": "JIRA (Agile Project Management)", "level": 80, "category": "Other Tools" },
+  { "name": "Slack (Collaboration with Salesforce)", "level": 75, "category": "Other Tools" }
+]
+,
+  
+  "certifications": [
+    "Salesforce Administrator",
+    "Salesforce Platform App Builder",
+    "Salesforce Platform Developer I",
+    "Salesforce Service Cloud Consultant",
+    "Salesforce Sales Cloud Consultant",
+    "Salesforce Experience Cloud Consultant",
+    "Salesforce CPQ Specialist",
+    "Salesforce Marketing Cloud Email Specialist"
+  ],
+  
+  "superbadges": [
+    "Apex Specialist",
+    "Lightning Experience Reports & Dashboards Specialist",
+    "Business Administration Specialist"
+  ],
+  
   "experience": [
     {
-      "title": "Software Engineer",
-      "company": "Gigaclear Pvt. Ltd.",
-      "duration": "Sep 2022 to Current",
-      "details": "Developed end-to-end solutions on Salesforce Sales, Salesforce CPQ(Industries), Service, FSL, Vlocity, Communications, Revenue, and Experience Site clouds. Integrated with external systems such as Pardot, Zuora, and NetAdmin. Played a key role in an Agile team and built a Marketing solution with Pardot. Devised dynamic Salesforce CPQ solutions, improving deal velocity by 15%. Led key projects like router deployment and OTS framework implementation."
+      "title": "Salesforce Administrator",
+      "company": "Gigaclear",
+      "duration": "May 2023 - Present",
+      "details": "Manage and optimize Salesforce implementation, create custom objects and fields, develop automation using Flows and Process Builder, and provide user training and support."
     },
     {
-      "title": "Systems Engineer",
-      "company": "Tata Consultancy Services Pvt Ltd.",
-      "duration": "Jan 2019 to Sep 2021",
-      "details": "Developed Salesforce CRM functionalities for an Oil and Gas company's digital transformation project. Worked on code deployments, integration, data migration, and optimization. Implemented B2B Service Cloud features and designed reusable Aura Components, Visualforce Pages, and Triggers."
+      "title": "Salesforce Developer",
+      "company": "Tata Consultancy Services",
+      "duration": "June 2020 - April 2023",
+      "details": "Developed custom Salesforce solutions, implemented automation workflows, and integrated third-party applications using APIs."
     }
   ],
+  
   "education": [
     {
       "degree": "Masters in Applied Data Science",
       "institution": "The University of Bath",
-      "duration": "Sept 2021 to Oct 2023"
+      "duration": "2019 - 2020"
     },
     {
-      "degree": "Bachelors in Computer Science",
-      "institution": "The University of Pune",
-      "duration": "June 2013 to July 2017"
+      "degree": "Bachelor of Engineering in Computer Science",
+      "institution": "University of Mumbai",
+      "duration": "2015 - 2019"
     }
   ],
-  "certifications": [
-    "Salesforce Certified Admin",
-    "Salesforce App Builder",
-    "Salesforce Platform Developer 1",
-    "Salesforce Sales Cloud Consultant",
-    "Salesforce Service Cloud Consultant",
-    "Salesforce Certified Data Architect",
-    "Salesforce Certified CPQ Specialist",
-    "Double Star Ranger"
-  ],
-  "skills": [
-    { "name": "Salesforce Lightning Developer", "level": 90 },
-    { "name": "Apex", "level": 85 },
-    { "name": "Python", "level": 80 },
-    { "name": "JavaScript", "level": 75 },
-    { "name": "Data Science", "level": 70 }
-  ],
-  "titles": [
-    "Salesforce Lightning Developer",
-    "Data Scientist",
-    "Cloud Solutions Enthusiast",
-    "Tech Innovator"
-  ],
+  
   "extras": [
-    "Best Table Tennis Player of the Year (2017)",
-    "Led department to win Annual Sports Trophy",
-    "Completed German Language Course with A Grade"
+    "Volunteer Salesforce Administrator for a local non-profit organization",
+    "Regular contributor to Salesforce Stack Exchange community",
+    "Presenter at local Salesforce user group meetings",
+    "Mentor for new Salesforce administrators"
   ]
 }

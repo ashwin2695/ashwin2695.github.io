@@ -2,7 +2,7 @@
   "name": "Ashwin Dilip Adhav",
   "contact": "Manchester | +44 07825347134 | 26adhav.ashwin@gmail.com",
   "titles": ["Salesforce Lightning Developer", "Salesforce Administrator"],
-  "summary": "Certified Salesforce Administrator with expertise in Lightning Experience, process automation, and security management. Triple Star Ranger with proven experience implementing and optimizing Salesforce solutions across multiple clouds.",
+  "summary": "Graduate at the University of Bath, Proficient and determined professional with experience in Salesforce Sales Cloud, Service Cloud, FSL, and Experience Site clouds. Skilled in developing Apex and Visual Force solutions and configuring Custom Objects, Page Layouts, Reports & Dashboards. Keen interest and inclination for leadership as an individual contributor and a team member demonstrated through positions of responsibility and sports.",
   
   "coreCompetencies": [
     "Problem Solving",
@@ -18,39 +18,39 @@
   ],
   
   "skills": [
-  { "name": "Flows (Record-Triggered, Scheduled)", "level": 85, "category": "Admin" },
-  { "name": "Reports and Dashboards", "level": 90, "category": "Admin" },
-  { "name": "Security and Access Management", "level": 85, "category": "Admin" },
-  { "name": "Profiles and Permission Sets", "level": 90, "category": "Admin" },
-  { "name": "Role Hierarchy and Sharing Rules", "level": 85, "category": "Admin" },
-  { "name": "Data Loader / Data Import Wizard", "level": 80, "category": "Admin" },
-  { "name": "Lightning App Builder", "level": 80, "category": "Admin" },
+    { "name": "Flows & Process Automation", "category": "Admin" },
+    { "name": "Reports and Dashboards", "category": "Admin" },
+    { "name": "Security and Access Management", "category": "Admin" },
+    { "name": "Profiles, Permission Sets & Sharing Rules", "category": "Admin" },
+    { "name": "Data Loader / Data Import Wizard", "category": "Admin" },
+    { "name": "Lightning App Builder", "category": "Admin" },
+    
+    { "name": "Apex Programming", "category": "Technical" },
+    { "name": "SOQL / SOSL", "category": "Technical" },
+    { "name": "REST API Integration", "category": "Technical" },
+    { "name": "Salesforce Object Model", "category": "Technical" },
+    { "name": "Validation Rules & Workflow Rules", "category": "Technical" },
+    { "name": "Lightning Web Components & Aura", "category": "Technical" },
+    { "name": "OmniStudio (FlexCards, OmniScripts)", "category": "Technical" },
+    
+    { "name": "Salesforce DevOps (Gearset)", "category": "DevOps" },
+    { "name": "WorkBench", "category": "DevOps" },
+    { "name": "Change Sets", "category": "DevOps" },
+    { "name": "Version Control (Git/GitLab)", "category": "DevOps" },
+    { "name": "SFDX CLI & VS Code", "category": "DevOps" },
+    
+    { "name": "Sales Cloud", "category": "Cloud Specializations" },
+    { "name": "Service Cloud", "category": "Cloud Specializations" },
+    { "name": "Experience Cloud (Communities)", "category": "Cloud Specializations" },
+    { "name": "CPQ (Configure, Price, Quote)", "category": "Cloud Specializations" }
+  ],
   
-  { "name": "Apex Programming", "level": 70, "category": "Technical" },
-  { "name": "SOQL / SOSL", "level": 75, "category": "Technical" },
-  { "name": "REST API Integration", "level": 70, "category": "Technical" },
-  { "name": "Salesforce Object Model (Standard and Custom Objects)", "level": 90, "category": "Technical" },
-  { "name": "Validation Rules and Workflow Rules", "level": 85, "category": "Technical" },
-  { "name": "Lightning Web Components (LWC)", "level": 70, "category": "Technical" },
-  { "name": "Aura Components", "level": 60, "category": "Technical" },
-  { "name": "OmniStudio (FlexCards, OmniScripts)", "level": 65, "category": "Technical" },
-  
-  { "name": "Salesforce DevOps (Gearset)", "level": 75, "category": "DevOps" },
-  { "name": "Copado", "level": 70, "category": "DevOps" },
-  { "name": "Change Sets", "level": 80, "category": "DevOps" },
-  { "name": "Version Control (Git)", "level": 65, "category": "DevOps" },
-  { "name": "SFDX CLI", "level": 65, "category": "DevOps" },
-  { "name": "VS Code (Salesforce Extensions)", "level": 75, "category": "DevOps" },
-  
-  { "name": "Sales Cloud", "level": 90, "category": "Cloud Specializations" },
-  { "name": "Service Cloud", "level": 85, "category": "Cloud Specializations" },
-  { "name": "Experience Cloud (Communities)", "level": 70, "category": "Cloud Specializations" },
-  { "name": "CPQ (Configure, Price, Quote)", "level": 60, "category": "Cloud Specializations" },
-  
-  { "name": "JIRA (Agile Project Management)", "level": 80, "category": "Other Tools" },
-  { "name": "Slack (Collaboration with Salesforce)", "level": 75, "category": "Other Tools" }
-]
-, 
+  "externalTools": [
+    "OwnBackup",
+    "Zuora",
+    "JIRA (Agile Project Management)",
+    "GitLab"
+  ],
   
   "certifications": [
     "Salesforce Administrator",
@@ -69,21 +69,40 @@
     "Business Administration Specialist"
   ],
   
+  "projects": [
+    {
+      "title": "New Router Introduction",
+      "details": "Led the deployment of new routers for both new and existing customers, ensuring seamless adoption and functionality across all users."
+    },
+    {
+      "title": "OTS Framework Implementation",
+      "details": "Designed and implemented the OTS (One Touch Switch) framework, simplifying Gigaclear's broadband provider switching process. Created new objects, record types, page layouts, profiles, and implemented screen flows with Lightning Components, triggers, callouts, and API endpoints, integrating with GOTS."
+    },
+    {
+      "title": "System-Wide Price Increase",
+      "details": "Spearheaded the implementation of a system-wide price increase project at Gigaclear. Segmented customers based on join dates and discounts, providing tailored pricing structures. Integrated with Zuora for billing and pricing adjustments, ensuring seamless operations."
+    },
+    {
+      "title": "Data Management with OwnBackup",
+      "details": "Managed environment refreshes, backups, and permissions using OwnBackup, ensuring data integrity and compliance with established policies."
+    }
+  ],
+  
   "experience": [
     {
-      "title": "Salesforce Administrator",
-      "company": "Gigaclear",
-      "duration": "May 2023 - Present",
-      "details": "Manage and optimize Salesforce implementation, create custom objects and fields, develop automation using Flows and Process Builder, and provide user training and support."
+      "title": "Software Engineer",
+      "company": "Gigaclear Pvt. Ltd.",
+      "duration": "Sep 2022 - Present",
+      "details": "Developed end-to-end solutions on Salesforce Sales, Service, FSL, and Experience Site clouds, integrating with external systems to manage Broadband and VOIP customers throughout their lifecycle. Utilized Salesforce tools such as VSCode, SourceTree, GitLab, GitHub, Workbench, and Change Sets for deploying code to higher environments. Played a key role in an Agile team, providing production support, developing new features, fixing bugs, and optimizing code. Integrated Salesforce with external systems using JSON and XML, collaborating with platforms like Zuora, NetAdmin, Oculeus Sasquatch, and T2API. Orchestrated an end-to-end automation of the sales pipeline using Salesforce Flow, slashing closure times by 20% and enhancing sales team productivity by 35%. Directed a cross-functional team in the creation of a personalized customer journey in Salesforce Marketing Cloud, boosting customer retention rates by 25%."
     },
     {
       "title": "Salesforce Developer",
       "company": "Tata Consultancy Services",
       "duration": "June 2020 - April 2023",
-      "details": "Developed custom Salesforce solutions, implemented automation workflows, and integrated third-party applications using APIs."
+      "details": "Developed Salesforce CRM functionalities for an Oil and Gas company's digital transformation project. Provided production support during go-lives, using debug logs to resolve issues. Deployed code using SourceTree, TortoiseGit, GitHub, Workbench, Change Sets, and Azure DevOps. Optimized existing code and functionalities. Integrated Salesforce with other systems using JSON and XML. Performed data migration using Data Loader and Data Import Wizard. Developed reusable Aura Components, Visualforce Pages, and Triggers for a Food and Hospitality client within an Agile framework, including custom objects, fields, layouts, and security features."
     }
   ],
-  s
+  
   "education": [
     {
       "degree": "Masters in Data Science",
@@ -98,7 +117,6 @@
   ],
   
   "extras": [
-    "Presenter at local Salesforce user group meetings",
     "Mentor for new Salesforce administrators"
   ]
 }

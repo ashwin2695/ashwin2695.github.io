@@ -168,7 +168,7 @@ body {
 }
 
 /* Certification and Superbadge Styles */
-.certification-item, .superbadge-item {
+.certification-item, .superbadge-item, .tool-item {
     display: flex;
     align-items: center;
     margin-bottom: 0.8rem;
@@ -177,11 +177,11 @@ body {
     transition: transform 0.3s ease;
 }
 
-.certification-item:hover, .superbadge-item:hover {
+.certification-item:hover, .superbadge-item:hover, .tool-item:hover {
     transform: translateX(5px);
 }
 
-.certification-item i, .superbadge-item i {
+.certification-item i, .superbadge-item i, .tool-item i {
     color: var(--white);
     margin-right: 10px;
     font-size: 0.8rem;
@@ -202,34 +202,22 @@ body {
 }
 
 .skill-item {
-    margin-bottom: 1rem;
-}
-
-.skill-header {
+    margin-bottom: 0.8rem;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.3rem;
+    align-items: center;
     font-size: 0.9rem;
+    padding-left: 0.5rem;
+    transition: transform 0.3s ease;
 }
 
-.skill-percentage {
+.skill-item:hover {
+    transform: translateX(5px);
+}
+
+.skill-item i {
+    color: var(--white);
+    margin-right: 10px;
     font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.skill-bar {
-    height: 6px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    background-color: var(--white);
-    border-radius: 3px;
-    width: 0;
-    transition: width 1.5s cubic-bezier(0.41, 0.01, 0.57, 1.61);
 }
 
 /* Main Content Styles */
@@ -246,6 +234,7 @@ body {
     border-radius: 8px;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .content-section:hover {
@@ -298,6 +287,33 @@ h2 i {
     font-size: 0.9rem;
 }
 
+/* Certifications Grid */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.certification-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--background-light);
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
 /* Experience Item Styles */
 .experience-item {
     margin-bottom: 1.5rem;
@@ -340,6 +356,40 @@ h2 i {
 .job-duration {
     color: var(--text-light);
     font-size: 0.9rem;
+}
+
+/* Project Item Styles */
+.project-item {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--primary-light);
+    position: relative;
+}
+
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.project-item:before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    background-color: var(--primary-light);
+    border: 3px solid var(--white);
+    border-radius: 50%;
+}
+
+.project-title {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.project-details {
+    margin-bottom: 0.5rem;
 }
 
 /* Education Item Styles */
@@ -467,13 +517,13 @@ footer {
         margin-left: 0;
     }
     
-    .competencies-grid {
+    .competencies-grid, .certifications-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
-} 
+}
 
 @media screen and (max-width: 768px) {
-    .competencies-grid {
+    .competencies-grid, .certifications-grid {
         grid-template-columns: 1fr 1fr;
     }
     
@@ -487,7 +537,7 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    .competencies-grid {
+    .competencies-grid, .certifications-grid {
         grid-template-columns: 1fr;
     }
 }

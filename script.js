@@ -26,6 +26,12 @@ async function loadResume() {
         expSection.appendChild(createExperienceElement(job));
     });
     
+    // Projects section
+    const projectsSection = document.getElementById('projects-content');
+    data.projects.forEach(project => {
+        projectsSection.appendChild(createProjectElement(project));
+    });
+    
     // Education section
     const eduSection = document.getElementById('education-content');
     data.education.forEach(edu => {
@@ -62,10 +68,16 @@ async function loadResume() {
         skillsSection.appendChild(categoryContainer);
     });
     
+    // External tools section
+    const toolsSection = document.getElementById('external-tools-content');
+    data.externalTools.forEach(tool => {
+        toolsSection.appendChild(createToolElement(tool));
+    });
+    
     // Certifications section
     const certSection = document.getElementById('certifications-content');
     data.certifications.forEach(cert => {
-        certSection.appendChild(createCertificationElement(cert));
+        certSection.appendChild(createCertificationCard(cert));
     });
     
     // Superbadges section
@@ -100,9 +112,6 @@ async function loadResume() {
     
     // Setup download button
     setupDownloadButton();
-    
-    // Animate skill bars
-    animateSkillBars();
 }
 
 function createCompetencyElement(competency) {
@@ -149,6 +158,25 @@ function createExperienceElement(job) {
     return element;
 }
 
+function createProjectElement(project) {
+    const element = document.createElement('div');
+    element.className = 'project-item';
+    element.setAttribute('data-aos', 'fade-up');
+    
+    const title = document.createElement('div');
+    title.className = 'project-title';
+    title.textContent = project.title;
+    
+    const details = document.createElement('p');
+    details.className = 'project-details';
+    details.textContent = project.details;
+    
+    element.appendChild(title);
+    element.appendChild(details);
+    
+    return element;
+}
+
 function createEducationElement(edu) {
     const element = document.createElement('div');
     element.className = 'education-item';
@@ -172,37 +200,38 @@ function createSkillElement(skill) {
     const element = document.createElement('div');
     element.className = 'skill-item';
     
-    const header = document.createElement('div');
-    header.className = 'skill-header';
+    const icon = document.createElement('i');
+    icon.className = 'fas fa-check';
     
-    const name = document.createElement('span');
-    name.textContent = skill.name;
+    const text = document.createElement('span');
+    text.textContent = skill.name;
     
-    const percentage = document.createElement('span');
-    percentage.className = 'skill-percentage';
-    percentage.textContent = `${skill.level}%`;
-    
-    header.appendChild(name);
-    header.appendChild(percentage);
-    
-    const bar = document.createElement('div');
-    bar.className = 'skill-bar';
-    
-    const progress = document.createElement('div');
-    progress.className = 'skill-progress';
-    progress.setAttribute('data-width', `${skill.level}%`);
-    
-    bar.appendChild(progress);
-    
-    element.appendChild(header);
-    element.appendChild(bar);
+    element.appendChild(icon);
+    element.appendChild(text);
     
     return element;
 }
 
-function createCertificationElement(cert) {
+function createToolElement(tool) {
     const element = document.createElement('div');
-    element.className = 'certification-item';
+    element.className = 'tool-item';
+    
+    const icon = document.createElement('i');
+    icon.className = 'fas fa-tools';
+    
+    const text = document.createElement('span');
+    text.textContent = tool;
+    
+    element.appendChild(icon);
+    element.appendChild(text);
+    
+    return element;
+}
+
+function createCertificationCard(cert) {
+    const element = document.createElement('div');
+    element.className = 'certification-card';
+    element.setAttribute('data-aos', 'fade-up');
     
     const icon = document.createElement('i');
     icon.className = 'fas fa-certificate';
@@ -267,21 +296,11 @@ function setupTypingEffect(titles) {
     type();
 }
 
-function animateSkillBars() {
-    setTimeout(() => {
-        const progressBars = document.querySelectorAll('.skill-progress');
-        progressBars.forEach(bar => {
-            const targetWidth = bar.getAttribute('data-width');
-            bar.style.width = targetWidth;
-        });
-    }, 500);
-}
-
 function setupDownloadButton() {
     const downloadButton = document.getElementById('download-resume');
     downloadButton.addEventListener('click', function() {
         window.open('Ashwin_Adhav_Resume.pdf', '_blank');
     });
-} 
+}
 
 window.addEventListener('DOMContentLoaded', loadResume);

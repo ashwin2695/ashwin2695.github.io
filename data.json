@@ -1,19 +1,19 @@
 {
   "name": "Ashwin Dilip Adhav",
   "contact": "Stockport, Manchester | 07825347134 | 26adhav.ashwin@gmail.com",
-  "summary": "Experienced Salesforce Developer with a proven track record in delivering end-to-end solutions...",
+  "summary": "Experienced Salesforce Developer with a proven track record...",
   "experience": [
     {
       "title": "Software Engineer",
       "company": "Gigaclear Pvt. Ltd.",
       "duration": "Sep 2022 to Current",
-      "details": "Developed end-to-end solutions on Salesforce Sales, CPQ, Service, FSL, Vlocity, Communications..."
+      "details": "Developed end-to-end solutions..."
     },
     {
       "title": "Systems Engineer",
       "company": "Tata Consultancy Services Pvt Ltd.",
       "duration": "Jan 2019 to Sep 2021",
-      "details": "Developed Salesforce CRM functionalities, integrated Salesforce with external systems, supported Go-Lives..."
+      "details": "Developed Salesforce CRM functionalities..."
     }
   ],
   "education": [

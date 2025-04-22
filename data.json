@@ -50,7 +50,7 @@
   { "name": "JIRA (Agile Project Management)", "level": 80, "category": "Other Tools" },
   { "name": "Slack (Collaboration with Salesforce)", "level": 75, "category": "Other Tools" }
 ]
-,
+, 
   
   "certifications": [
     "Salesforce Administrator",

@@ -282,6 +282,6 @@ function setupDownloadButton() {
     downloadButton.addEventListener('click', function() {
         window.open('Ashwin_Adhav_Resume.pdf', '_blank');
     });
-}
+} 
 
 window.addEventListener('DOMContentLoaded', loadResume);

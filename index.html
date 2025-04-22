@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashwin Dilip Adhav | Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashwin Dilip Adhav | Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header>
-        <h1 id="name"></h1>
-        <p id="contact"></p>
-    </header>
 
-    <section id="summary" class="card"></section>
+<header class="fade-in">
+  <h1 id="name"></h1>
+  <p id="contact"></p>
+</header>
 
-    <section id="experience" class="card">
-        <h2>Work Experience</h2>
-        <div id="experience-content"></div>
-    </section>
+<main>
+  <section id="summary" class="card hidden"></section>
 
-    <section id="education" class="card">
-        <h2>Education</h2>
-        <div id="education-content"></div>
-    </section>
+  <section id="experience" class="card hidden">
+    <h2>Work Experience</h2>
+    <div id="experience-content"></div>
+  </section>
 
-    <section id="certifications" class="card">
-        <h2>Certifications & Skills</h2>
-        <div id="certifications-content"></div>
-    </section>
+  <section id="education" class="card hidden">
+    <h2>Education</h2>
+    <div id="education-content"></div>
+  </section>
 
-    <section id="extras" class="card">
-        <h2>Extra Curriculars</h2>
-        <div id="extras-content"></div>
-    </section>
+  <section id="certifications" class="card hidden">
+    <h2>Certifications & Skills</h2>
+    <ul id="certifications-content"></ul>
+  </section>
 
-    <footer>
-        <p>Made with ❤️ by Ashwin Dilip Adhav</p>
-    </footer>
+  <section id="extras" class="card hidden">
+    <h2>Extra Curriculars</h2>
+    <ul id="extras-content"></ul>
+  </section>
+</main>
 
-    <script src="script.js"></script>
+<footer class="fade-in">
+  <p>Built with ❤️ by Ashwin Dilip Adhav</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

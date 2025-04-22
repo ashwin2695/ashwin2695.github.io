@@ -31,6 +31,18 @@ async function loadResume() {
   data.extras.forEach(extra => {
     extraSection.innerHTML += `<li>${extra}</li>`;
   });
+
+  // Typing animation using data.json titles
+  let i = 0;
+  const titleText = data.titles;
+  function typeTitle() {
+    if (i < titleText.length) {
+      document.getElementById('name').innerText = titleText[i];
+      i++;
+      setTimeout(typeTitle, 2000); // Change text every 2 seconds
+    }
+  }
+  typeTitle();
 }
 
 function revealOnScroll() {

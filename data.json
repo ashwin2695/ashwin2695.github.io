@@ -1,0 +1,46 @@
+{
+  "name": "Ashwin Dilip Adhav",
+  "contact": "Stockport, Manchester | 07825347134 | 26adhav.ashwin@gmail.com",
+  "summary": "Experienced Salesforce Developer with a proven track record in delivering end-to-end solutions...",
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Gigaclear Pvt. Ltd.",
+      "duration": "Sep 2022 to Current",
+      "details": "Developed end-to-end solutions on Salesforce Sales, CPQ, Service, FSL, Vlocity, Communications..."
+    },
+    {
+      "title": "Systems Engineer",
+      "company": "Tata Consultancy Services Pvt Ltd.",
+      "duration": "Jan 2019 to Sep 2021",
+      "details": "Developed Salesforce CRM functionalities, integrated Salesforce with external systems, supported Go-Lives..."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Masters in Applied Data Science",
+      "institution": "The University of Bath",
+      "duration": "Sept 2021 to Oct 2023"
+    },
+    {
+      "degree": "Bachelors in Computer Science",
+      "institution": "The University of Pune",
+      "duration": "June 2013 to July 2017"
+    }
+  ],
+  "certifications": [
+    "Salesforce Certified Admin",
+    "Salesforce App Builder",
+    "Salesforce Platform Developer 1",
+    "Salesforce Sales Cloud Consultant",
+    "Salesforce Service Cloud Consultant",
+    "Salesforce Certified Data Architect",
+    "Salesforce Certified CPQ Specialist",
+    "Double Star Ranger"
+  ],
+  "extras": [
+    "Best Table Tennis Player of the Year (2017)",
+    "Led department to win Annual Sports Trophy",
+    "Completed German Language Course with A Grade"
+  ]
+}

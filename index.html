@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ashwin Dilip Adhav | Resume</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwin Dilip Adhav - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-
-<header class="fade-in">
-  <h1 id="name"></h1>
-  <p id="contact"></p>
-  <!-- Resume Download Button -->
-  <button id="download-resume" onclick="window.location.href='Resume.pdf'">Download Resume</button>
-</header>
-
-<main>
-  <section id="summary" class="card hidden"></section>
-
-  <section id="experience" class="card hidden">
-    <h2>Work Experience</h2>
-    <div id="experience-content"></div>
-  </section>
-
-  <section id="education" class="card hidden">
-    <h2>Education</h2>
-    <div id="education-content"></div>
-  </section>
-
-  <section id="certifications" class="card hidden">
-    <h2>Certifications & Skills</h2>
-    <ul id="certifications-content"></ul>
-  </section>
-
-  <section id="extras" class="card hidden">
-    <h2>Extra Curriculars</h2>
-    <ul id="extras-content"></ul>
-  </section>
-</main>
-
-<footer class="fade-in">
-  <p>Built with ❤️ by Ashwin Dilip Adhav</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <header>
+        <h1 id="name"></h1>
+        <p id="contact"></p>
+        <div id="title-container">
+            <span id="title-text"></span><span class="cursor">|</span>
+        </div>
+        <button id="download-resume" class="download-btn">Download Resume</button>
+    </header>
+    
+    <main>
+        <section class="card" data-aos="fade-up">
+            <h2>Professional Summary</h2>
+            <p id="summary"></p>
+        </section>
+        
+        <section class="card" data-aos="fade-up">
+            <h2>Work Experience</h2>
+            <div id="experience-content"></div>
+        </section>
+        
+        <section class="card" data-aos="fade-up">
+            <h2>Education</h2>
+            <div id="education-content"></div>
+        </section>
+        
+        <section class="card" data-aos="fade-up">
+            <h2>Certifications</h2>
+            <div id="certifications-content"></div>
+        </section>
+        
+        <section class="card" data-aos="fade-up">
+            <h2>Skills</h2>
+            <div id="skills-content"></div>
+        </section>
+        
+        <section class="card" data-aos="fade-up">
+            <h2>Extra Curriculars</h2>
+            <div id="extras-content"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 Ashwin Dilip Adhav. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: "ease-in-out",
+            once: true
+        });
+    </script>
 </body>
 </html>

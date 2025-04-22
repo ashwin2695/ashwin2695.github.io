@@ -2,30 +2,45 @@ async function loadResume() {
     const response = await fetch('data.json');
     const data = await response.json();
     
+    // Main content
     document.getElementById('name').innerText = data.name;
-    document.getElementById('contact').innerText = data.contact;
     document.getElementById('summary').innerText = data.summary;
     
+    // Sidebar content
+    document.getElementById('sidebar-name').innerText = data.name;
+    document.getElementById('sidebar-title').innerText = data.titles[0];
+    
+    // Parse contact information
+    const contactParts = data.contact.split('|');
+    document.getElementById('location').innerText = contactParts[0].trim();
+    document.getElementById('phone').innerText = contactParts[1].trim();
+    document.getElementById('email').innerText = contactParts[2].trim();
+    
+    // Experience section with timeline
     const expSection = document.getElementById('experience-content');
     data.experience.forEach(job => {
         expSection.appendChild(createExperienceElement(job));
     });
     
+    // Education section with timeline
     const eduSection = document.getElementById('education-content');
     data.education.forEach(edu => {
         eduSection.appendChild(createEducationElement(edu));
     });
     
-    const certSection = document.getElementById('certifications-content');
-    data.certifications.forEach(cert => {
-        certSection.appendChild(createCertificationElement(cert));
-    });
-    
-    const skillsSection = document.getElementById('skills-content');
+    // Sidebar skills with vertical progress bars
+    const sidebarSkillsSection = document.getElementById('sidebar-skills-content');
     data.skills.forEach(skill => {
-        skillsSection.appendChild(createSkillElement(skill));
+        sidebarSkillsSection.appendChild(createSidebarSkillElement(skill));
     });
     
+    // Sidebar certifications
+    const sidebarCertSection = document.getElementById('sidebar-certifications-content');
+    data.certifications.forEach(cert => {
+        sidebarCertSection.appendChild(createSidebarCertificationElement(cert));
+    });
+    
+    // Extra curriculars
     const extrasSection = document.getElementById('extras-content');
     data.extras.forEach(extra => {
         const li = document.createElement('li');
@@ -43,6 +58,7 @@ async function loadResume() {
     
     setupTypingEffect(data.titles);
     setupDownloadButton();
+    animateProgressBars();
     observeElements();
 }
 
@@ -86,47 +102,53 @@ function createEducationElement(edu) {
     return element;
 }
 
-function createCertificationElement(cert) {
+function createSidebarSkillElement(skill) {
     const element = document.createElement("div");
-    element.setAttribute("data-aos", "zoom-in");
-    element.setAttribute("data-aos-delay", "150");
-    element.className = "certification-item";
+    element.className = "skill-item-sidebar";
     
-    const certText = document.createElement("p");
-    certText.innerHTML = `<span style="color: #4f46e5;">✓</span> ${cert}`;
+    const progressBar = document.createElement("div");
+    progressBar.className = "vertical-progress-bar";
     
-    element.appendChild(certText);
+    const progressFill = document.createElement("div");
+    progressFill.className = "vertical-progress-fill";
+    progressFill.style.height = "0%"; // Will be animated later
+    progressFill.setAttribute("data-height", `${skill.level}%`);
+    
+    progressBar.appendChild(progressFill);
+    
+    const skillInfo = document.createElement("div");
+    skillInfo.className = "skill-info";
+    
+    const skillName = document.createElement("span");
+    skillName.className = "skill-name";
+    skillName.textContent = skill.name;
+    
+    const skillPercentage = document.createElement("span");
+    skillPercentage.className = "skill-percentage";
+    skillPercentage.textContent = `${skill.level}%`;
+    
+    skillInfo.appendChild(skillName);
+    skillInfo.appendChild(skillPercentage);
+    
+    element.appendChild(progressBar);
+    element.appendChild(skillInfo);
     
     return element;
 }
 
-function createSkillElement(skill) {
+function createSidebarCertificationElement(cert) {
     const element = document.createElement("div");
-    element.setAttribute("data-aos", "fade-right");
-    element.setAttribute("data-aos-delay", "50");
-    element.className = "skill-item";
+    element.className = "certification-item-sidebar";
     
-    const skillName = document.createElement("p");
-    skillName.textContent = skill.name;
+    const icon = document.createElement("div");
+    icon.className = "certification-icon";
+    icon.innerHTML = '<i class="fas fa-certificate"></i>';
     
-    const progressContainer = document.createElement("div");
-    progressContainer.className = "skill-progress-container";
-    progressContainer.style.width = "100%";
-    progressContainer.style.backgroundColor = "#e5e7eb";
-    progressContainer.style.borderRadius = "10px";
-    progressContainer.style.marginBottom = "15px";
+    const text = document.createElement("span");
+    text.textContent = cert;
     
-    const progressBar = document.createElement("div");
-    progressBar.className = "skill-progress-bar";
-    progressBar.style.width = `${skill.level}%`;
-    progressBar.style.backgroundColor = "#6366f1";
-    progressBar.style.height = "10px";
-    progressBar.style.borderRadius = "10px";
-    progressBar.style.transition = "width 1.5s ease-in-out";
-    
-    progressContainer.appendChild(progressBar);
-    element.appendChild(skillName);
-    element.appendChild(progressContainer);
+    element.appendChild(icon);
+    element.appendChild(text);
     
     return element;
 }
@@ -164,6 +186,16 @@ function setupTypingEffect(titles) {
     }
     
     type();
+}
+
+function animateProgressBars() {
+    setTimeout(() => {
+        const progressFills = document.querySelectorAll('.vertical-progress-fill');
+        progressFills.forEach(fill => {
+            const targetHeight = fill.getAttribute('data-height');
+            fill.style.height = targetHeight;
+        });
+    }, 500);
 }
 
 function setupDownloadButton() {

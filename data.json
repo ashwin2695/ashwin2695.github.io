@@ -1,19 +1,19 @@
 {
   "name": "Ashwin Dilip Adhav",
   "contact": "Stockport, Manchester | 07825347134 | 26adhav.ashwin@gmail.com",
-  "summary": "Experienced Salesforce Developer with a proven track record...",
+  "summary": "Experienced Salesforce Developer with a proven track record in delivering end-to-end solutions across Salesforce Sales, CPQ, Service, FSL, Vlocity, Communications, Revenue, and Experience Site clouds. Skilled in integrating Salesforce with external systems, using tools like Gearset, VSCode, SourceTree, GitLab, GitHub, Workbench, and Change Sets for smooth deployments and operations. Proficient in developing Apex classes, triggers, Visualforce pages, controllers and extensions, Aura components, and Salesforce Flows.",
   "experience": [
     {
       "title": "Software Engineer",
       "company": "Gigaclear Pvt. Ltd.",
       "duration": "Sep 2022 to Current",
-      "details": "Developed end-to-end solutions..."
+      "details": "Developed end-to-end solutions on Salesforce Sales, Salesforce CPQ(Industries), Service, FSL, Vlocity, Communications, Revenue, and Experience Site clouds. Integrated with external systems such as Pardot, Zuora, and NetAdmin. Played a key role in an Agile team and built a Marketing solution with Pardot. Devised dynamic Salesforce CPQ solutions, improving deal velocity by 15%. Led key projects like router deployment and OTS framework implementation."
     },
     {
       "title": "Systems Engineer",
       "company": "Tata Consultancy Services Pvt Ltd.",
       "duration": "Jan 2019 to Sep 2021",
-      "details": "Developed Salesforce CRM functionalities..."
+      "details": "Developed Salesforce CRM functionalities for an Oil and Gas company's digital transformation project. Worked on code deployments, integration, data migration, and optimization. Implemented B2B Service Cloud features and designed reusable Aura Components, Visualforce Pages, and Triggers."
     }
   ],
   "education": [
@@ -37,6 +37,19 @@
     "Salesforce Certified Data Architect",
     "Salesforce Certified CPQ Specialist",
     "Double Star Ranger"
+  ],
+  "skills": [
+    { "name": "Salesforce Lightning Developer", "level": 90 },
+    { "name": "Apex", "level": 85 },
+    { "name": "Python", "level": 80 },
+    { "name": "JavaScript", "level": 75 },
+    { "name": "Data Science", "level": 70 }
+  ],
+  "titles": [
+    "Salesforce Lightning Developer",
+    "Data Scientist",
+    "Cloud Solutions Enthusiast",
+    "Tech Innovator"
   ],
   "extras": [
     "Best Table Tennis Player of the Year (2017)",

@@ -99,6 +99,131 @@
     border-left: 3px solid var(--primary-color);
 }
 
+/* Nested Projects as Tiles */
+.nested-projects .projects-grid {
+    display: flex;
+    gap: var(--spacing-md);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.nested-projects .projects-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.nested-projects .projects-grid::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-full);
+}
+
+.nested-projects .projects-grid::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: var(--radius-full);
+}
+
+.nested-projects .projects-grid::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+@media (min-width: 768px) {
+    .nested-projects .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .nested-projects .projects-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.nested-projects .project-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-base);
+    flex: 0 0 300px;
+    min-width: 300px;
+}
+
+.nested-projects .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.nested-projects .project-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.nested-projects .project-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nested-projects .project-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.nested-projects .project-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+    font-size: 0.9rem;
+}
+
+.nested-projects .project-achievements {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0;
+}
+
+.nested-projects .project-achievements li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.nested-projects .project-achievements li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.nested-projects .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+}
+
+.nested-projects .project-tag {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
 .projects-list {
     display: flex;
     flex-direction: column;

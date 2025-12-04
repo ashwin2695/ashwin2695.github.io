@@ -23,3 +23,29 @@ export function renderCertifications(certifications) {
     
     banner.innerHTML = html;
 }
+
+// Superbadges Component - Banner below certifications
+export function renderSuperbadges(superbadges) {
+    const banner = document.getElementById('superbadgesBanner');
+    
+    const html = `
+        <div class="container">
+            <div class="banner-title">
+                <i class="fas fa-trophy"></i>
+                <span>Superbadges</span>
+            </div>
+            <div class="certifications-scroll">
+                <div class="certifications-horizontal">
+                    ${superbadges.map(badge => `
+                        <div class="superbadge-badge">
+                            <i class="fas fa-medal"></i>
+                            <span class="cert-name">${badge}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+    `;
+    
+    banner.innerHTML = html;
+}

@@ -4,7 +4,7 @@
     "location": "Manchester, UK",
     "phone": "+44 07825347134",
     "email": "26adhav.ashwin@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/ashwin-adhav",
+    "linkedin": "https://www.linkedin.com/in/ashwin-adhav-410598102/",
     "github": "https://github.com/ashwin2695"
   },
   
@@ -59,8 +59,8 @@
   
   "profileImage": "assets/images/profile.png",
   "resumePDF": {
-    "salesforce": "assets/Ashwin_Adhav_Salesforce_Resume.pdf",
-    "datascience": "assets/Ashwin_Adhav_DataScience_Resume.pdf",
-    "fullstack": "assets/Ashwin_Adhav_FullStack_Resume.pdf"
+    "salesforce": "assets/Ashwin_Adhav_Resume.pdf",
+    "datascience": "assets/Ashwin_Adhav_Resume.pdf",
+    "fullstack": "assets/Ashwin_Adhav_Resume.pdf"
   }
 }

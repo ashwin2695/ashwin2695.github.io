@@ -5,7 +5,7 @@ import { renderSidebar } from './components/Sidebar.js';
 import { renderExperience } from './components/Experience.js';
 import { renderProjects } from './components/Projects.js';
 import { renderSkills } from './components/Skills.js';
-import { renderCertifications } from './components/Certifications.js';
+import { renderCertifications, renderSuperbadges } from './components/Certifications.js';
 import { renderEducation } from './components/Education.js';
 
 class ResumeApp {
@@ -139,19 +139,26 @@ class ResumeApp {
         renderExperience(roleData.experience);
         renderSkills(roleData.skills);
         renderCertifications(roleData.certifications);
+        
+        // Render superbadges if available (Salesforce role)
+        if (roleData.superbadges && roleData.superbadges.length > 0) {
+            renderSuperbadges(roleData.superbadges);
+            document.getElementById('superbadgesBanner').style.display = 'block';
+        } else {
+            document.getElementById('superbadgesBanner').style.display = 'none';
+        }
+        
         renderEducation(sharedData.education);
         
-        // Handle projects section - only show standalone projects for non-Salesforce roles
+        // Handle projects section - hide for Salesforce (projects are nested in experience)
         const standaloneProjectsSection = document.getElementById('standaloneProjectsSection');
         if (this.currentRole === 'salesforce') {
-            // For Salesforce, projects are nested in experience, so hide standalone section
             standaloneProjectsSection.style.display = 'none';
-        } else {
-            // For other roles, show standalone projects
+        } else if (roleData.projects && roleData.projects.length > 0) {
             standaloneProjectsSection.style.display = 'block';
-            if (roleData.projects) {
-                renderProjects(roleData.projects);
-            }
+            renderProjects(roleData.projects);
+        } else {
+            standaloneProjectsSection.style.display = 'none';
         }
 
         // Update section titles
@@ -193,14 +200,18 @@ class ResumeApp {
         if (pdfPath) {
             const link = document.createElement('a');
             link.href = pdfPath;
-            link.download = `Ashwin_Adhav_${this.currentRole}_Resume.pdf`;
+            link.download = `Ashwin_Adhav_${this.currentRole.charAt(0).toUpperCase() + this.currentRole.slice(1)}_Resume.pdf`;
+            document.body.appendChild(link);
             link.click();
+            document.body.removeChild(link);
         } else {
-            // Fallback: use old resume
+            // Fallback: use general resume
             const link = document.createElement('a');
-            link.href = '../Resume_V1/Ashwin_Adhav_Resume.pdf';
+            link.href = 'assets/Ashwin_Adhav_Resume.pdf';
             link.download = 'Ashwin_Adhav_Resume.pdf';
+            document.body.appendChild(link);
             link.click();
+            document.body.removeChild(link);
         }
     }
 

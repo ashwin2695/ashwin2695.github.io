@@ -44,15 +44,15 @@ export function renderExperience(experiences) {
                         <i class="fas fa-project-diagram"></i>
                         Key Projects at ${exp.company}
                     </h4>
-                    <div class="projects-list">
+                    <div class="projects-grid">
                         ${exp.projects.map(project => `
-                            <div class="nested-project-card">
-                                <div class="project-header-inline">
-                                    <h5 class="nested-project-title">
-                                        <i class="fas fa-arrow-right" style="color: var(--primary-color); font-size: 0.9rem;"></i>
-                                        ${project.title}
-                                    </h5>
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon">
+                                        <i class="fas ${project.icon || 'fa-project-diagram'}"></i>
+                                    </div>
                                 </div>
+                                <h3 class="project-title">${project.title}</h3>
                                 <p class="project-description">${project.description}</p>
                                 ${project.achievements && project.achievements.length > 0 ? `
                                     <ul class="project-achievements">
@@ -60,7 +60,7 @@ export function renderExperience(experiences) {
                                     </ul>
                                 ` : ''}
                                 ${project.technologies && project.technologies.length > 0 ? `
-                                    <div class="project-tags" style="margin-top: 0.75rem;">
+                                    <div class="project-tags">
                                         ${project.technologies.map(tech => `
                                             <span class="project-tag">${tech}</span>
                                         `).join('')}

@@ -1,7 +1,7 @@
 {
   "role": "salesforce",
   "title": "Salesforce Developer",
-  "badge": "Double Star Ranger",
+  "badge": "Triple Star Ranger • Agentforce Innovator",
   "summary": "Graduate from the University of Bath with a Master's in Data Science. Proficient and determined Salesforce professional with extensive experience in Sales Cloud, Service Cloud, FSL, and Experience Cloud. Skilled in developing Apex and Visual Force solutions, Lightning Web Components, and configuring enterprise-level Salesforce implementations. Demonstrated leadership in technical projects and cross-functional team collaboration.",
   
   "experience": [
@@ -13,56 +13,51 @@
       "description": "Developed end-to-end solutions on Salesforce Sales, Service, FSL, and Experience Site clouds, integrating with external systems to manage Broadband and VOIP customers throughout their lifecycle.",
       "responsibilities": [
         "Led development of complex Salesforce solutions across multiple clouds (Sales, Service, FSL, Experience)",
-        "Orchestrated end-to-end automation of the sales pipeline using Salesforce Flow, reducing closure times by 20% and enhancing sales team productivity by 35%",
-        "Directed cross-functional team in creating personalized customer journeys in Marketing Cloud, boosting retention rates by 25%",
+        "Orchestrated end-to-end automation of the sales pipeline using Salesforce Flow, reducing closure times by 20%",
         "Integrated Salesforce with external systems (Zuora, NetAdmin, Oculeus Sasquatch, T2API) using REST/SOAP APIs",
-        "Utilized Salesforce DevOps tools including VSCode, SourceTree, GitLab, GitHub, Workbench, and Change Sets",
-        "Provided production support, developed new features, fixed bugs, and optimized code in Agile environment"
+        "Provided production support, developed new features, and optimized code in Agile environment"
       ],
       "technologies": ["Salesforce Sales Cloud", "Service Cloud", "FSL", "Experience Cloud", "Marketing Cloud", "Apex", "LWC", "Flows", "Zuora", "Git"],
       "projects": [
         {
           "title": "OTS Framework Implementation",
+          "icon": "fa-network-wired",
           "description": "Designed and implemented the OTS (One Touch Switch) framework, simplifying Gigaclear's broadband provider switching process.",
           "achievements": [
             "Created new custom objects, record types, page layouts, and profiles for the switching framework",
             "Implemented screen flows with Lightning Components for seamless user experience",
-            "Developed Apex triggers and callouts for integration with GOTS system",
-            "Built REST API endpoints for external system communication",
             "Reduced provider switching time by 60% and improved customer satisfaction scores"
           ],
           "technologies": ["Apex", "Lightning Components", "Screen Flows", "REST API", "Custom Objects"]
         },
         {
           "title": "System-Wide Price Increase",
+          "icon": "fa-chart-line",
           "description": "Spearheaded the implementation of a system-wide price increase project impacting 50,000+ customers.",
           "achievements": [
             "Segmented customers based on join dates and discounts using SOQL queries",
             "Developed batch Apex classes to process pricing updates efficiently",
-            "Integrated with Zuora for automated billing and pricing adjustments",
-            "Created comprehensive reports and dashboards for business stakeholders",
             "Ensured zero customer complaints through thorough testing and communication"
           ],
           "technologies": ["Apex Batch", "Zuora Integration", "SOQL", "Reports & Dashboards"]
         },
         {
           "title": "New Router Introduction",
+          "icon": "fa-wifi",
           "description": "Led the deployment of new router management system for both new and existing customers.",
           "achievements": [
             "Developed FSL-based solution for router deployment tracking",
             "Created automated workflows for router assignment and tracking",
-            "Built Service Cloud console for support team efficiency",
-            "Integrated with inventory management system via APIs",
             "Achieved 95% successful deployment rate on first attempt"
           ],
           "technologies": ["Salesforce FSL", "Service Cloud", "Workflows", "API Integration"]
         },
         {
           "title": "Data Management with OwnBackup",
+          "icon": "fa-database",
           "description": "Established data governance framework using OwnBackup for multiple Salesforce orgs.",
           "achievements": [
             "Configured automated daily backups for production and sandbox environments",
-            "Performed environment refreshes with data masking for security compliance",
             "Implemented data recovery procedures reducing recovery time by 80%",
             "Managed permissions and access controls across all environments"
           ],
@@ -145,59 +140,77 @@
   
   "certifications": [
     {
-      "name": "Salesforce Administrator",
+      "name": "Agentforce Specialist",
       "icon": "fa-certificate",
       "issuer": "Salesforce",
-      "date": "2020"
+      "date": "Jul 2025"
     },
     {
-      "name": "Platform App Builder",
+      "name": "CRM Analytics and Einstein Discovery Consultant",
       "icon": "fa-certificate",
       "issuer": "Salesforce",
-      "date": "2020"
-    },
-    {
-      "name": "Platform Developer I",
-      "icon": "fa-certificate",
-      "issuer": "Salesforce",
-      "date": "2021"
-    },
-    {
-      "name": "Service Cloud Consultant",
-      "icon": "fa-certificate",
-      "issuer": "Salesforce",
-      "date": "2022"
+      "date": "Oct 2020"
     },
     {
       "name": "Sales Cloud Consultant",
       "icon": "fa-certificate",
       "issuer": "Salesforce",
-      "date": "2022"
+      "date": "Jul 2020"
     },
     {
-      "name": "Experience Cloud Consultant",
+      "name": "CPQ Administrator",
       "icon": "fa-certificate",
       "issuer": "Salesforce",
-      "date": "2023"
+      "date": "Mar 2021"
     },
     {
-      "name": "CPQ Specialist",
+      "name": "Platform Administrator",
       "icon": "fa-certificate",
       "issuer": "Salesforce",
-      "date": "2023"
+      "date": "Sep 2019"
     },
     {
-      "name": "Marketing Cloud Email Specialist",
+      "name": "Platform App Builder",
       "icon": "fa-certificate",
       "issuer": "Salesforce",
-      "date": "2023"
+      "date": "May 2020"
+    },
+    {
+      "name": "Platform Developer I",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "Dec 2019"
+    },
+    {
+      "name": "Platform Data Architect",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "Jun 2021"
+    },
+    {
+      "name": "Platform Foundations",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "Aug 2023"
+    },
+    {
+      "name": "Service Cloud Consultant",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "Aug 2020"
     }
   ],
   
   "superbadges": [
+    "Agentforce Service",
+    "Prompt Builder Templates",
+    "Business Administration Specialist",
     "Apex Specialist",
+    "Security Specialist",
     "Lightning Experience Reports & Dashboards Specialist",
-    "Business Administration Specialist"
+    "App Customization Specialist",
+    "Process Automation Specialist",
+    "Lightning Experience Specialist"
   ],
   
   "tools": [

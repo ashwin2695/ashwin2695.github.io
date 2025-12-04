@@ -20,6 +20,13 @@ export function renderProjects(projects) {
                     </div>
                     <h3 class="project-title">${project.title}</h3>
                     <p class="project-description">${project.description}</p>
+                    ${project.achievements && project.achievements.length > 0 ? `
+                        <ul class="project-achievements">
+                            ${project.achievements.map(achievement => `
+                                <li>${achievement}</li>
+                            `).join('')}
+                        </ul>
+                    ` : ''}
                     ${project.details ? `
                         <p class="project-description" style="font-size: 0.9rem; color: var(--text-muted);">
                             ${project.details}

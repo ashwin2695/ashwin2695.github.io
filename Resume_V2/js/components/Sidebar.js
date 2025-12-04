@@ -36,22 +36,5 @@ export function renderSidebar(roleData, sharedData) {
         `;
     }
 
-    // Superbadges (for Salesforce role)
-    if (roleData.superbadges && roleData.superbadges.length > 0) {
-        html += `
-            <div class="sidebar-section">
-                <h3><i class="fas fa-award"></i> Superbadges</h3>
-                <div class="badge-list">
-                    ${roleData.superbadges.map(badge => `
-                        <div class="badge-item">
-                            <i class="fas fa-medal"></i>
-                            <span>${badge}</span>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        `;
-    }
-
     sidebarContent.innerHTML = html;
 }

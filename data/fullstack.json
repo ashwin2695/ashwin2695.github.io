@@ -1,0 +1,147 @@
+{
+  "role": "fullstack",
+  "title": "Full Stack Developer",
+  "badge": "MERN Stack Expert",
+  "summary": "Versatile full-stack developer with expertise in modern web technologies and cloud platforms. Experienced in building scalable applications using React, Node.js, and cloud services. Strong foundation in both front-end and back-end development with a focus on creating efficient, user-centric solutions. Proven track record of delivering complex projects from conception to deployment.",
+  
+  "experience": [
+    {
+      "title": "Full Stack Developer",
+      "company": "Gigaclear Pvt. Ltd.",
+      "location": "Manchester, UK",
+      "duration": "Sep 2022 - Present",
+      "description": "Developed full-stack solutions integrating various technologies and platforms.",
+      "highlights": [
+        "Built responsive web applications using React, Node.js, and modern JavaScript frameworks",
+        "Developed RESTful APIs and integrated with third-party services",
+        "Implemented CI/CD pipelines using Git, GitLab, and Azure DevOps",
+        "Created automated testing suites improving code quality and reducing bugs by 40%",
+        "Optimized application performance resulting in 50% faster load times"
+      ],
+      "technologies": ["React", "Node.js", "JavaScript", "REST APIs", "Git", "Azure DevOps"]
+    },
+    {
+      "title": "Software Developer",
+      "company": "Tata Consultancy Services",
+      "location": "India",
+      "duration": "June 2020 - April 2023",
+      "description": "Developed enterprise applications and custom solutions for global clients.",
+      "highlights": [
+        "Built reusable UI components and implemented responsive design patterns",
+        "Developed backend services handling 10K+ daily transactions",
+        "Integrated applications with databases and external APIs",
+        "Participated in Agile development processes and code reviews",
+        "Mentored junior developers on best practices and coding standards"
+      ],
+      "technologies": ["JavaScript", "HTML/CSS", "SQL", "Git", "Agile"]
+    }
+  ],
+  
+  "projects": [
+    {
+      "title": "GitHub Pages Resume Portfolio",
+      "icon": "fa-briefcase",
+      "description": "Modern, modular resume website with role-switching capability.",
+      "details": "Built using vanilla JavaScript ES6 modules with component-based architecture. Features dark mode, responsive design, and dynamic content loading.",
+      "technologies": ["JavaScript ES6", "HTML5", "CSS3", "GitHub Pages"],
+      "link": "https://ashwin2695.github.io"
+    },
+    {
+      "title": "E-Commerce Platform",
+      "icon": "fa-shopping-cart",
+      "description": "Full-stack e-commerce application with payment integration.",
+      "details": "MERN stack application with user authentication, product catalog, shopping cart, and Stripe payment integration.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "Stripe API"],
+      "link": null
+    },
+    {
+      "title": "Real-Time Chat Application",
+      "icon": "fa-comments",
+      "description": "WebSocket-based chat app with real-time messaging.",
+      "details": "Built with Socket.io for real-time communication, featuring private rooms, file sharing, and message history.",
+      "technologies": ["Socket.io", "React", "Node.js", "MongoDB"],
+      "link": null
+    },
+    {
+      "title": "Task Management System",
+      "icon": "fa-tasks",
+      "description": "Collaborative project management tool with team features.",
+      "details": "Full-featured task tracker with drag-and-drop, real-time updates, and team collaboration capabilities.",
+      "technologies": ["React", "Redux", "Node.js", "PostgreSQL"],
+      "link": null
+    }
+  ],
+  
+  "skills": {
+    "Frontend": [
+      { "name": "React", "level": 85 },
+      { "name": "JavaScript/ES6+", "level": 90 },
+      { "name": "HTML5", "level": 95 },
+      { "name": "CSS3/SCSS", "level": 90 },
+      { "name": "TypeScript", "level": 75 },
+      { "name": "Redux", "level": 80 }
+    ],
+    "Backend": [
+      { "name": "Node.js", "level": 85 },
+      { "name": "Express.js", "level": 85 },
+      { "name": "REST APIs", "level": 90 },
+      { "name": "GraphQL", "level": 70 },
+      { "name": "Python", "level": 80 }
+    ],
+    "Database": [
+      { "name": "MongoDB", "level": 80 },
+      { "name": "PostgreSQL", "level": 75 },
+      { "name": "MySQL", "level": 75 },
+      { "name": "Redis", "level": 65 }
+    ],
+    "DevOps & Tools": [
+      { "name": "Git/GitHub", "level": 90 },
+      { "name": "Docker", "level": 75 },
+      { "name": "CI/CD", "level": 80 },
+      { "name": "AWS", "level": 70 },
+      { "name": "Azure", "level": 75 }
+    ],
+    "Other": [
+      { "name": "WebSockets", "level": 75 },
+      { "name": "Jest/Testing", "level": 80 },
+      { "name": "Webpack", "level": 70 },
+      { "name": "Responsive Design", "level": 95 }
+    ]
+  },
+  
+  "certifications": [
+    {
+      "name": "BE Computer Science",
+      "icon": "fa-graduation-cap",
+      "issuer": "University of Pune",
+      "date": "2017"
+    },
+    {
+      "name": "MSc Data Science",
+      "icon": "fa-graduation-cap",
+      "issuer": "University of Bath",
+      "date": "2022"
+    }
+  ],
+  
+  "tools": [
+    "VS Code",
+    "Git/GitHub",
+    "Postman",
+    "Docker",
+    "JIRA",
+    "Figma",
+    "Chrome DevTools"
+  ],
+  
+  "coreCompetencies": [
+    "Full Stack Development",
+    "RESTful API Design",
+    "Responsive Web Design",
+    "Database Design",
+    "Code Optimization",
+    "Agile Development",
+    "Problem Solving",
+    "Team Collaboration"
+  ]
+}

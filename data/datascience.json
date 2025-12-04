@@ -1,0 +1,152 @@
+{
+  "role": "datascience",
+  "title": "Data Scientist & ML Engineer",
+  "badge": "MSc Data Science",
+  "summary": "Data Science graduate from the University of Bath with strong foundations in machine learning, statistical analysis, and data engineering. Experienced in building end-to-end ML pipelines, developing predictive models, and deriving actionable insights from complex datasets. Proficient in Python, R, and modern ML frameworks with a passion for solving real-world problems through data-driven approaches.",
+  
+  "experience": [
+    {
+      "title": "Data Science Researcher",
+      "company": "University of Bath",
+      "location": "Bath, UK",
+      "duration": "2021 - 2022",
+      "description": "Conducted advanced research in machine learning and statistical modeling as part of Master's dissertation.",
+      "highlights": [
+        "Developed machine learning models for predictive analytics with 85%+ accuracy",
+        "Performed exploratory data analysis on large-scale datasets using Python and R",
+        "Built data pipelines for automated feature engineering and model training",
+        "Presented research findings to academic peers and industry professionals",
+        "Collaborated with cross-functional teams on data-driven projects"
+      ],
+      "technologies": ["Python", "R", "Scikit-learn", "TensorFlow", "Pandas", "NumPy", "Jupyter"]
+    },
+    {
+      "title": "Software Engineer (Data Focus)",
+      "company": "Gigaclear Pvt. Ltd.",
+      "location": "Manchester, UK",
+      "duration": "Sep 2022 - Present",
+      "description": "Applied data science techniques to optimize business processes and customer analytics.",
+      "highlights": [
+        "Built predictive models for customer churn reduction, improving retention by 25%",
+        "Developed automated reporting dashboards using Python and data visualization tools",
+        "Performed statistical analysis on customer behavior patterns and sales metrics",
+        "Implemented data-driven solutions that reduced operational costs by 20%",
+        "Created ETL pipelines for processing and analyzing customer data"
+      ],
+      "technologies": ["Python", "SQL", "Pandas", "Tableau", "Statistical Analysis", "Machine Learning"]
+    }
+  ],
+  
+  "projects": [
+    {
+      "title": "Customer Churn Prediction Model",
+      "icon": "fa-chart-line",
+      "description": "Built ML model to predict customer churn with 88% accuracy.",
+      "details": "Utilized Random Forest and XGBoost algorithms with feature engineering to identify at-risk customers. Deployed model in production environment with automated retraining pipeline.",
+      "technologies": ["Python", "Scikit-learn", "XGBoost", "Pandas", "Flask"],
+      "link": null
+    },
+    {
+      "title": "Sentiment Analysis Pipeline",
+      "icon": "fa-comments",
+      "description": "Developed NLP pipeline for analyzing customer feedback sentiment.",
+      "details": "Processed 100K+ customer reviews using BERT and transformer models. Built real-time dashboard for sentiment tracking and trend analysis.",
+      "technologies": ["Python", "BERT", "Transformers", "NLTK", "spaCy"],
+      "link": null
+    },
+    {
+      "title": "Sales Forecasting System",
+      "icon": "fa-chart-bar",
+      "description": "Time series forecasting model for revenue prediction.",
+      "details": "Implemented ARIMA and LSTM models to forecast sales with 90% accuracy. Integrated with business intelligence tools for automated reporting.",
+      "technologies": ["Python", "TensorFlow", "LSTM", "Time Series Analysis"],
+      "link": null
+    },
+    {
+      "title": "Recommendation Engine",
+      "icon": "fa-robot",
+      "description": "Collaborative filtering system for product recommendations.",
+      "details": "Built hybrid recommendation system combining content-based and collaborative filtering approaches. Increased cross-sell by 30%.",
+      "technologies": ["Python", "Scikit-learn", "Matrix Factorization", "APIs"],
+      "link": null
+    }
+  ],
+  
+  "skills": {
+    "Programming Languages": [
+      { "name": "Python", "level": 95 },
+      { "name": "R", "level": 85 },
+      { "name": "SQL", "level": 90 },
+      { "name": "JavaScript", "level": 75 }
+    ],
+    "Machine Learning": [
+      { "name": "Scikit-learn", "level": 90 },
+      { "name": "TensorFlow", "level": 85 },
+      { "name": "PyTorch", "level": 80 },
+      { "name": "XGBoost", "level": 85 },
+      { "name": "Keras", "level": 85 }
+    ],
+    "Data Engineering": [
+      { "name": "Pandas", "level": 95 },
+      { "name": "NumPy", "level": 90 },
+      { "name": "Apache Spark", "level": 75 },
+      { "name": "ETL Pipelines", "level": 85 }
+    ],
+    "Visualization & BI": [
+      { "name": "Tableau", "level": 80 },
+      { "name": "Power BI", "level": 75 },
+      { "name": "Matplotlib", "level": 90 },
+      { "name": "Seaborn", "level": 85 },
+      { "name": "Plotly", "level": 80 }
+    ],
+    "Specializations": [
+      { "name": "Statistical Analysis", "level": 90 },
+      { "name": "NLP", "level": 80 },
+      { "name": "Computer Vision", "level": 70 },
+      { "name": "Time Series", "level": 85 },
+      { "name": "Deep Learning", "level": 80 }
+    ]
+  },
+  
+  "certifications": [
+    {
+      "name": "MSc Data Science",
+      "icon": "fa-graduation-cap",
+      "issuer": "University of Bath",
+      "date": "2022"
+    },
+    {
+      "name": "Machine Learning Specialization",
+      "icon": "fa-certificate",
+      "issuer": "Coursera/Stanford",
+      "date": "2021"
+    },
+    {
+      "name": "Deep Learning Specialization",
+      "icon": "fa-certificate",
+      "issuer": "Coursera/deeplearning.ai",
+      "date": "2021"
+    }
+  ],
+  
+  "tools": [
+    "Jupyter Notebook",
+    "Git/GitHub",
+    "Docker",
+    "AWS SageMaker",
+    "Google Colab",
+    "MLflow",
+    "DVC"
+  ],
+  
+  "coreCompetencies": [
+    "Machine Learning",
+    "Statistical Analysis",
+    "Data Visualization",
+    "Predictive Modeling",
+    "Feature Engineering",
+    "Model Deployment",
+    "A/B Testing",
+    "Data Pipeline Development"
+  ]
+}

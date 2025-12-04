@@ -1,0 +1,66 @@
+{
+  "name": "Ashwin Dilip Adhav",
+  "contact": {
+    "location": "Manchester, UK",
+    "phone": "+44 07825347134",
+    "email": "26adhav.ashwin@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ashwin-adhav",
+    "github": "https://github.com/ashwin2695"
+  },
+  
+  "education": [
+    {
+      "degree": "Master of Science in Data Science",
+      "institution": "University of Bath",
+      "location": "Bath, UK",
+      "duration": "2021 - 2022",
+      "gpa": "Distinction",
+      "highlights": [
+        "Specialized in Machine Learning and Statistical Analysis",
+        "Dissertation on Predictive Modeling using Deep Learning",
+        "Relevant coursework: ML, AI, Big Data Analytics, Statistical Computing"
+      ]
+    },
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "institution": "University of Pune",
+      "location": "Pune, India",
+      "duration": "2013 - 2017",
+      "gpa": "First Class",
+      "highlights": [
+        "Focus on Software Engineering and Algorithms",
+        "Led technical team for college tech fest",
+        "Active in coding competitions and hackathons"
+      ]
+    }
+  ],
+  
+  "languages": [
+    { "name": "English", "level": "Fluent" },
+    { "name": "Hindi", "level": "Native" },
+    { "name": "Marathi", "level": "Native" }
+  ],
+  
+  "interests": [
+    "Open Source Contribution",
+    "Sports & Fitness",
+    "Technology Blogging",
+    "Mentoring",
+    "Team Leadership"
+  ],
+  
+  "achievements": [
+    "Salesforce Double Star Ranger",
+    "8 Salesforce Certifications",
+    "3 Salesforce Superbadges",
+    "Published research in Data Science",
+    "Mentor for new Salesforce administrators"
+  ],
+  
+  "profileImage": "assets/images/profile.png",
+  "resumePDF": {
+    "salesforce": "assets/Ashwin_Adhav_Salesforce_Resume.pdf",
+    "datascience": "assets/Ashwin_Adhav_DataScience_Resume.pdf",
+    "fullstack": "assets/Ashwin_Adhav_FullStack_Resume.pdf"
+  }
+}

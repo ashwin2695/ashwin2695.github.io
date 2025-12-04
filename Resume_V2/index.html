@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ashwin Dilip Adhav - Salesforce Developer, Data Scientist, Full Stack Developer">
+    <title>Ashwin Dilip Adhav | Portfolio Resume</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/certifications-banner.css">
+    <link rel="stylesheet" href="css/components/sidebar.css">
+    <link rel="stylesheet" href="css/components/experience.css">
+    <link rel="stylesheet" href="css/components/projects.css">
+    <link rel="stylesheet" href="css/components/skills.css">
+</head>
+<body data-theme="light">
+    
+    <!-- Header with Role Toggle -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Ashwin Dilip Adhav</h1>
+                    <p class="tagline">Crafting Solutions Across Domains</p>
+                </div>
+                
+                <!-- Role Toggle -->
+                <nav class="role-toggle" role="navigation" aria-label="Role selector">
+                    <button class="role-btn active" data-role="salesforce" aria-pressed="true">
+                        <i class="fab fa-salesforce"></i>
+                        <span>Salesforce Developer</span>
+                    </button>
+                    <button class="role-btn" data-role="datascience" aria-pressed="false">
+                        <i class="fas fa-brain"></i>
+                        <span>Data Scientist</span>
+                    </button>
+                    <button class="role-btn" data-role="fullstack" aria-pressed="false">
+                        <i class="fas fa-code"></i>
+                        <span>Full Stack Developer</span>
+                    </button>
+                </nav>
+                
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Certifications Banner -->
+    <section class="certifications-banner" id="certificationsBanner">
+        <!-- Will be populated by JavaScript -->
+    </section>
+
+    <!-- Main Layout -->
+    <main class="main-layout">
+        <div class="container">
+            <div class="layout-grid">
+                
+                <!-- Sidebar -->
+                <aside class="sidebar" id="sidebar">
+                    <div class="profile-section">
+                        <div class="profile-image">
+                            <img src="assets/images/profile.png" alt="Ashwin Dilip Adhav" id="profileImg">
+                            <div class="status-badge" id="roleBadge">Double Star Ranger</div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span id="location">Manchester, UK</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span id="phone">+44 07825347134</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span id="email">26adhav.ashwin@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="#" target="_blank" id="linkedin">LinkedIn</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <a href="https://github.com/ashwin2695" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+
+                        <button class="download-btn" id="downloadResume">
+                            <i class="fas fa-download"></i>
+                            <span>Download Resume</span>
+                        </button>
+                    </div>
+
+                    <!-- Dynamic Sidebar Content -->
+                    <div class="sidebar-content" id="sidebarContent">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <section class="content">
+                    
+                    <!-- Summary Section -->
+                    <div class="section summary-section" data-animate>
+                        <h2 class="section-title">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Professional Summary</span>
+                        </h2>
+                        <div class="section-content">
+                            <p id="summary" class="summary-text">
+                                <!-- Will be populated by JavaScript -->
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Section -->
+                    <div class="section experience-section" data-animate>
+                        <h2 class="section-title">
+                            <i class="fas fa-briefcase"></i>
+                            <span id="experienceTitle">Professional Experience</span>
+                        </h2>
+                        <div class="section-content" id="experienceContent">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div class="section skills-section" data-animate>
+                        <h2 class="section-title">
+                            <i class="fas fa-tools"></i>
+                            <span>Technical Skills</span>
+                        </h2>
+                        <div class="section-content" id="skillsContent">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div class="section education-section" data-animate>
+                        <h2 class="section-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Education</span>
+                        </h2>
+                        <div class="section-content" id="educationContent">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Projects Section (for non-Salesforce roles) -->
+                    <div class="section projects-section" data-animate id="standaloneProjectsSection">
+                        <h2 class="section-title">
+                            <i class="fas fa-project-diagram"></i>
+                            <span id="projectsTitle">Key Projects</span>
+                        </h2>
+                        <div class="section-content" id="projectsContent">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ashwin Dilip Adhav. Built with modern web technologies.</p>
+            <div class="footer-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

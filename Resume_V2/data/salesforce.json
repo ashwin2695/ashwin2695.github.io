@@ -1,0 +1,222 @@
+{
+  "role": "salesforce",
+  "title": "Salesforce Developer",
+  "badge": "Double Star Ranger",
+  "summary": "Graduate from the University of Bath with a Master's in Data Science. Proficient and determined Salesforce professional with extensive experience in Sales Cloud, Service Cloud, FSL, and Experience Cloud. Skilled in developing Apex and Visual Force solutions, Lightning Web Components, and configuring enterprise-level Salesforce implementations. Demonstrated leadership in technical projects and cross-functional team collaboration.",
+  
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Gigaclear Pvt. Ltd.",
+      "location": "Manchester, UK",
+      "duration": "Sep 2022 - Present",
+      "description": "Developed end-to-end solutions on Salesforce Sales, Service, FSL, and Experience Site clouds, integrating with external systems to manage Broadband and VOIP customers throughout their lifecycle.",
+      "responsibilities": [
+        "Led development of complex Salesforce solutions across multiple clouds (Sales, Service, FSL, Experience)",
+        "Orchestrated end-to-end automation of the sales pipeline using Salesforce Flow, reducing closure times by 20% and enhancing sales team productivity by 35%",
+        "Directed cross-functional team in creating personalized customer journeys in Marketing Cloud, boosting retention rates by 25%",
+        "Integrated Salesforce with external systems (Zuora, NetAdmin, Oculeus Sasquatch, T2API) using REST/SOAP APIs",
+        "Utilized Salesforce DevOps tools including VSCode, SourceTree, GitLab, GitHub, Workbench, and Change Sets",
+        "Provided production support, developed new features, fixed bugs, and optimized code in Agile environment"
+      ],
+      "technologies": ["Salesforce Sales Cloud", "Service Cloud", "FSL", "Experience Cloud", "Marketing Cloud", "Apex", "LWC", "Flows", "Zuora", "Git"],
+      "projects": [
+        {
+          "title": "OTS Framework Implementation",
+          "description": "Designed and implemented the OTS (One Touch Switch) framework, simplifying Gigaclear's broadband provider switching process.",
+          "achievements": [
+            "Created new custom objects, record types, page layouts, and profiles for the switching framework",
+            "Implemented screen flows with Lightning Components for seamless user experience",
+            "Developed Apex triggers and callouts for integration with GOTS system",
+            "Built REST API endpoints for external system communication",
+            "Reduced provider switching time by 60% and improved customer satisfaction scores"
+          ],
+          "technologies": ["Apex", "Lightning Components", "Screen Flows", "REST API", "Custom Objects"]
+        },
+        {
+          "title": "System-Wide Price Increase",
+          "description": "Spearheaded the implementation of a system-wide price increase project impacting 50,000+ customers.",
+          "achievements": [
+            "Segmented customers based on join dates and discounts using SOQL queries",
+            "Developed batch Apex classes to process pricing updates efficiently",
+            "Integrated with Zuora for automated billing and pricing adjustments",
+            "Created comprehensive reports and dashboards for business stakeholders",
+            "Ensured zero customer complaints through thorough testing and communication"
+          ],
+          "technologies": ["Apex Batch", "Zuora Integration", "SOQL", "Reports & Dashboards"]
+        },
+        {
+          "title": "New Router Introduction",
+          "description": "Led the deployment of new router management system for both new and existing customers.",
+          "achievements": [
+            "Developed FSL-based solution for router deployment tracking",
+            "Created automated workflows for router assignment and tracking",
+            "Built Service Cloud console for support team efficiency",
+            "Integrated with inventory management system via APIs",
+            "Achieved 95% successful deployment rate on first attempt"
+          ],
+          "technologies": ["Salesforce FSL", "Service Cloud", "Workflows", "API Integration"]
+        },
+        {
+          "title": "Data Management with OwnBackup",
+          "description": "Established data governance framework using OwnBackup for multiple Salesforce orgs.",
+          "achievements": [
+            "Configured automated daily backups for production and sandbox environments",
+            "Performed environment refreshes with data masking for security compliance",
+            "Implemented data recovery procedures reducing recovery time by 80%",
+            "Managed permissions and access controls across all environments"
+          ],
+          "technologies": ["OwnBackup", "Data Management", "Salesforce Administration"]
+        }
+      ]
+    },
+    {
+      "title": "Salesforce Developer",
+      "company": "Tata Consultancy Services",
+      "location": "India",
+      "duration": "June 2020 - April 2023",
+      "description": "Developed Salesforce CRM functionalities for Oil & Gas and Food & Hospitality clients, focusing on digital transformation and custom solutions.",
+      "responsibilities": [
+        "Developed Salesforce CRM functionalities for Oil and Gas company's digital transformation project",
+        "Provided critical production support during go-lives using debug logs and diagnostic tools",
+        "Built reusable Aura Components, Visualforce Pages, and Triggers in Agile framework",
+        "Performed large-scale data migration using Data Loader and Data Import Wizard",
+        "Deployed code using SourceTree, TortoiseGit, GitHub, Workbench, and Azure DevOps"
+      ],
+      "technologies": ["Salesforce", "Apex", "Visualforce", "Aura", "Data Loader", "Azure DevOps", "Git"],
+      "projects": [
+        {
+          "title": "Oil & Gas Digital Transformation",
+          "description": "Led Salesforce implementation for major Oil & Gas company's digital transformation initiative.",
+          "achievements": [
+            "Developed custom objects and workflows for field service operations",
+            "Built integration with SAP for real-time data synchronization",
+            "Created dashboards for executive leadership team",
+            "Improved operational efficiency by 30% through automation"
+          ],
+          "technologies": ["Apex", "Integration", "Dashboards", "Custom Development"]
+        },
+        {
+          "title": "Food & Hospitality CRM Solution",
+          "description": "Built comprehensive CRM solution for restaurant chain management.",
+          "achievements": [
+            "Developed reusable Aura Components for franchise management",
+            "Created Visualforce pages for custom reporting interfaces",
+            "Implemented trigger framework for business logic enforcement",
+            "Migrated 100K+ customer records with zero data loss"
+          ],
+          "technologies": ["Aura", "Visualforce", "Triggers", "Data Migration"]
+        }
+      ]
+    }
+  ],
+
+  
+  "skills": {
+    "Admin": [
+      { "name": "Flows & Process Automation", "level": 90 },
+      { "name": "Reports and Dashboards", "level": 85 },
+      { "name": "Security and Access Management", "level": 80 },
+      { "name": "Data Loader / Data Import Wizard", "level": 85 },
+      { "name": "Lightning App Builder", "level": 90 }
+    ],
+    "Technical": [
+      { "name": "Apex Programming", "level": 90 },
+      { "name": "SOQL / SOSL", "level": 85 },
+      { "name": "REST API Integration", "level": 80 },
+      { "name": "Lightning Web Components", "level": 85 },
+      { "name": "Aura Components", "level": 80 },
+      { "name": "OmniStudio", "level": 75 }
+    ],
+    "DevOps": [
+      { "name": "Git/GitLab", "level": 85 },
+      { "name": "Gearset", "level": 75 },
+      { "name": "SFDX CLI & VS Code", "level": 90 },
+      { "name": "Change Sets", "level": 85 }
+    ],
+    "Cloud Specializations": [
+      { "name": "Sales Cloud", "level": 90 },
+      { "name": "Service Cloud", "level": 90 },
+      { "name": "Experience Cloud", "level": 80 },
+      { "name": "CPQ", "level": 75 },
+      { "name": "Marketing Cloud", "level": 70 }
+    ]
+  },
+  
+  "certifications": [
+    {
+      "name": "Salesforce Administrator",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "2020"
+    },
+    {
+      "name": "Platform App Builder",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "2020"
+    },
+    {
+      "name": "Platform Developer I",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "2021"
+    },
+    {
+      "name": "Service Cloud Consultant",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "2022"
+    },
+    {
+      "name": "Sales Cloud Consultant",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "2022"
+    },
+    {
+      "name": "Experience Cloud Consultant",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "2023"
+    },
+    {
+      "name": "CPQ Specialist",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "2023"
+    },
+    {
+      "name": "Marketing Cloud Email Specialist",
+      "icon": "fa-certificate",
+      "issuer": "Salesforce",
+      "date": "2023"
+    }
+  ],
+  
+  "superbadges": [
+    "Apex Specialist",
+    "Lightning Experience Reports & Dashboards Specialist",
+    "Business Administration Specialist"
+  ],
+  
+  "tools": [
+    "OwnBackup",
+    "Zuora",
+    "JIRA",
+    "GitLab",
+    "Gearset",
+    "Workbench"
+  ],
+  
+  "coreCompetencies": [
+    "Problem Solving",
+    "Attention to Detail",
+    "Communication",
+    "Process Automation",
+    "Data Management",
+    "Security Management",
+    "Business Analysis",
+    "Change Management"
+  ]
+}

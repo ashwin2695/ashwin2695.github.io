@@ -1,0 +1,107 @@
+/* ========================================
+   Certifications Banner Component
+   ======================================== */
+
+.certifications-banner {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    border-bottom: 2px solid var(--border-color);
+    padding: var(--spacing-lg) 0;
+    margin-top: var(--header-height);
+}
+
+.certifications-banner .container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.banner-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    min-width: fit-content;
+}
+
+.banner-title i {
+    font-size: 1.3rem;
+}
+
+.certifications-scroll {
+    flex: 1;
+}
+
+.certifications-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    padding: var(--spacing-xs) 0;
+}
+
+.cert-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+    cursor: default;
+}
+
+.cert-badge i {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.cert-badge:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.cert-badge:hover i {
+    color: white;
+}
+
+.cert-name {
+    font-weight: 500;
+}
+
+/* Responsive Certifications Banner */
+@media (max-width: 1024px) {
+    .certifications-banner .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
+    }
+    
+    .banner-title {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications-banner {
+        padding: var(--spacing-md) 0;
+    }
+    
+    .banner-title {
+        font-size: 1rem;
+    }
+    
+    .cert-badge {
+        font-size: 0.85rem;
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+}
